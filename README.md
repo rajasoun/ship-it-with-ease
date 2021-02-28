@@ -8,3 +8,18 @@
 -   [prettier](https://prettier.io/): An opinionated code formatter
 -   [lint-staged](https://github.com/okonet/lint-staged): Run linters against staged git files and don't let :poop: slip into your code base!
 -   [release-it](https://github.com/release-it/release-it): Generic CLI tool to automate versioning and package publishing related tasks
+
+## Prerequisites
+
+1. Set up your environment. Follow the steps in the [Quick Start: Lightning Web Components](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/)project. The steps include:
+
+    - NVM
+    - Nodejs
+
+1. Clone this repository:
+
+    ```
+    git clone ghttps://github.com/rajasoun/ship-it
+    cd ship-it
+    npm install
+    ```

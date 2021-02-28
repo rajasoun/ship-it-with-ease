@@ -6,6 +6,9 @@
     "license": "ISC",
     "private": true,
     "scripts": {
+        "list-installed-npm-packages": "npm ls --depth=0.",
+        "list-outdated-npm-packages": "npm outdated --depth=0.",
+        "update-npm-packages": "npm update",
         "test": "echo \"Error: no test specified\" && exit 1",
         "commit": "cz",
         "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
