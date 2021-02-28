@@ -4,7 +4,7 @@
     "description": "Pre Commit Hook Spike",
     "author": "Raja",
     "license": "ISC",
-    "private": true,
+    "private": false,
     "scripts": {
         "list-installed-npm-packages": "npm ls --depth=0.",
         "list-outdated-npm-packages": "npm outdated --depth=0.",
