@@ -24,5 +24,3 @@
     cd ship-it
     npm install
     ```
-    
-    
