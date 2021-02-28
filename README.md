@@ -11,12 +11,13 @@
 
 ## Prerequisites
 
-1. Set up your environment. Follow the steps in the [Quick Start: Lightning Web Components](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/)project. The steps include:
+1.  Set up your environment. Follow the steps in the [Quick Start: snap-it shell](/ToDO:pending)project.
+    The steps include:
 
-    - NVM
-    - Nodejs
+        - NVM
+        - Nodejs
 
-1. Clone this repository:
+1.  Clone this repository:
 
     ```
     git clone ghttps://github.com/rajasoun/ship-it
