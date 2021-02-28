@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 . "$(dirname "$0")/_/husky.sh"
 . "$(dirname "$0")/common.sh"
 
@@ -12,6 +12,8 @@ echo "$FILES" | xargs npx lint-staged
 
 if command_exists docker && test -t 1; then
     docker run --rm -v $(pwd):/data fxinnovation/pre-commit run --all-files
+elif command_exists pre-commit && test -t 1; then
+    pre-commit run --all-files
 fi
 
 # Add back the modified/prettified files to staging
