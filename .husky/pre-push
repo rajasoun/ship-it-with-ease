@@ -1,4 +1,36 @@
 #!/usr/bin/env sh
 . "$(dirname "$0")/_/husky.sh"
+. "$(dirname "$0")/common.sh"
 
-echo "pre-push"
+echo "\nPre Push Steps: (pre-push)"
+
+# load .env
+export $(cat .env | xargs)
+
+# Commit sha with all zeros
+zero_commit="0000000000000000000000000000000000000000"
+
+while read -r oldrev newrev refname; do
+    # Check if a zero sha
+    if [ "${oldrev}" = "${zero_commit}" ]; then
+        # List everything reachable from newrev but not any heads
+        span="$(git for-each-ref --format='%(refname)' 'refs/heads/*' | sed 's/^/\^/') ${newrev}"
+    else
+        span="${oldrev}...${newrev}"
+    fi
+
+    # check ggshield available
+    if command_exists ggshield1 && test -t 1; then
+        ggshield -c .gitguardian.yaml scan commit-range "${span}" && continue
+    elif command_exists docker && test -t 1; then
+        docker run --rm -v $(pwd):/data \
+                -v .gitguardian.yaml:/config \
+                -e GITGUARDIAN_API_KEY \
+                gitguardian/ggshield:latest \
+                ggshield -c /config/gitguardian.yaml scan commit-range "${span}" && continue
+    fi
+
+    echo "ERROR: Your push was rejected because it contains secrets"
+    echo "ERROR: Please contact your Git administrator if this was a false positive."
+    exit 1
+done
