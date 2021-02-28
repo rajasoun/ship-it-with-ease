@@ -14,8 +14,7 @@
         "commit": "cz",
         "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
         "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
-        "postinstall": "node bin/check-version.js && husky install",
-        "release": "release-it"
+        "postinstall": "node bin/check-version.js && husky install"
     },
     "engines": {
         "node": ">= 15.10.0",
@@ -32,7 +31,6 @@
         "pinst": "^2.1.6",
         "prettier": "^2.2.1",
         "prettier-plugin-apex": "^1.8.0",
-        "release-it": "^14.4.1",
         "semver": "^7.3.4"
     },
     "husky": {

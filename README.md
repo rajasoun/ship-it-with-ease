@@ -7,7 +7,6 @@
 -   [commitlint](https://github.com/conventional-changelog/commitlint): Tool that validates the commit message following a set of rules and good practices
 -   [prettier](https://prettier.io/): An opinionated code formatter
 -   [lint-staged](https://github.com/okonet/lint-staged): Run linters against staged git files and don't let :poop: slip into your code base!
--   [release-it](https://github.com/release-it/release-it): Generic CLI tool to automate versioning and package publishing related tasks
 
 ## Prerequisites
 
