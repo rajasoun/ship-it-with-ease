@@ -9,11 +9,11 @@ export $(cat .env | xargs)
 
 # check ggshield available
 if command_exists ggshield && test -t 1; then
-    ggshield -c .gitguardian.yaml scan pre-commit && continue
+    ggshield -c .gitguardian.yaml scan path .  --recursive -y
 elif command_exists docker && test -t 1; then
     docker run --rm -v $(pwd):/data \
             -v $(pwd):/config \
             -e GITGUARDIAN_API_KEY \
             gitguardian/ggshield:latest \
-            ggshield -c /config/.gitguardian.yaml scan pre-commit && continue
+            ggshield -c /config/.gitguardian.yaml scan path .  --recursive -y
 fi
