@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "\n1. Pre Commit Steps: (pre-commit)"
+npx lint-staged

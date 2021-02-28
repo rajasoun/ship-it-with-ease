@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "\n3. Lint Commit Message: (commitlint-msg)"
+npx commitlint --edit $HUSKY_GIT_PARAMS
+#npx commitlint --edit $1
