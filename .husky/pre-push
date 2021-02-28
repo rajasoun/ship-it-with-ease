@@ -17,7 +17,3 @@ elif command_exists docker && test -t 1; then
             gitguardian/ggshield:latest \
             ggshield -c /config/.gitguardian.yaml scan commit-range pre-commit && continue
 fi
-
-echo "ERROR: Your push was rejected because it contains secrets"
-echo "ERROR: Please contact your Git administrator if this was a false positive."
-exit 1
