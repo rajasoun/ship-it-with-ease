@@ -1,9 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
-
-command_exists () {
-  command -v "$1" >/dev/null 2>&1
-}
+. "$(dirname "$0")/common.sh"
 
 echo "\n1. Pre Commit Steps: (pre-commit)"
 
@@ -13,7 +10,7 @@ FILES=$(git diff --cached --name-only --diff-filter=ACMR "*.js" "*.*" | sed 's| 
 # Prettify all selected files
 echo "$FILES" | xargs npx lint-staged
 
-# Workaround for Windows 10, Git Bash and Yarn
+# check pre-commit  available
 if command_exists pre-commit && test -t 1; then
   pre-commit run --all-files
 fi
