@@ -9,6 +9,7 @@
         "list-installed-npm-packages": "npm ls --depth=0.",
         "list-outdated-npm-packages": "npm outdated --depth=0.",
         "update-npm-packages": "npm update",
+        "lint": "npm run lint:lwc && npm run lint:aura",
         "test": "echo \"Error: no test specified\" && exit 1",
         "commit": "cz",
         "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
@@ -44,11 +45,17 @@
     "lint-staged": {
         "**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,yaml,yml,xml}": [
             "prettier --write"
+        ],
+        "**/{aura|lwc}/**": [
+            "eslint"
         ]
     },
     "config": {
         "commitizen": {
             "path": "./node_modules/cz-conventional-changelog"
         }
+    },
+    "dependencies": {
+        "eslint": "^7.21.0"
     }
 }
