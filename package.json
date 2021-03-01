@@ -1,6 +1,6 @@
 {
     "name": "devsecops-ship-it",
-    "version": "0.0.2",
+    "version": "0.0.1",
     "description": "Pre Commit Hook Spike",
     "author": "Raja",
     "license": "ISC",
@@ -31,7 +31,6 @@
         "eslint": "^7.21.0",
         "husky": "^5.1.1",
         "lint-staged": "^10.5.4",
-        "np": "^7.4.0",
         "pinst": "^2.1.6",
         "prettier": "^2.2.1",
         "prettier-plugin-apex": "^1.8.0",

@@ -8,6 +8,7 @@
 -   [prettier](https://prettier.io/): An opinionated code formatter
 -   [lint-staged](https://github.com/okonet/lint-staged): Run linters against staged git files and don't let :poop: slip into your code base!
 -   [pre-commit](https://pre-commit.com/): A framework for managing and maintaining multi-language pre-commit hooks
+-   [release-it](https://github.com/release-it/release-it): CLI tool to automate versioning and package publishing related tasks
 
 ## Prerequisites
 
