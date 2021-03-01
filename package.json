@@ -51,5 +51,8 @@
     },
     "dependencies": {
         "eslint": "^7.21.0"
+    },
+    "npm": {
+        "publish": true
     }
 }
