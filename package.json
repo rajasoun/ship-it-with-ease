@@ -33,13 +33,6 @@
         "prettier-plugin-apex": "^1.8.0",
         "semver": "^7.3.4"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged",
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-            "prepare-commit-msg": "exec < /dev/tty &amp;&amp; git cz --hook || true"
-        }
-    },
     "lint-staged": {
         "**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,yaml,yml,xml}": [
             "prettier --write"
