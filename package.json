@@ -14,6 +14,7 @@
         "commit": "cz",
         "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
         "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
+        "pre-commit": "bin/pre-commit.sh",
         "postinstall": "node bin/check-version.js && husky install"
     },
     "engines": {
