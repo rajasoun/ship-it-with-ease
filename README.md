@@ -38,3 +38,8 @@
     pipenv shell
     pipenv install
     ```
+
+1.  Populate .env file with GITHUB_TOKEN, GITGUARDIAN_API_KEY and GITGUARDIAN_API_URL
+    ```
+    cp .env.sample .env
+    ```
