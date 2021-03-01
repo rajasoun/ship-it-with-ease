@@ -1,6 +1,6 @@
 {
     "name": "devsecops-ship-it",
-    "version": "1.0.2",
+    "version": "0.0.1",
     "description": "Pre Commit Hook Spike",
     "author": "Raja",
     "license": "ISC",
