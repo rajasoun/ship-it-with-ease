@@ -1,4 +1,4 @@
-# Ship It! 🚀
+# Ship It with Ease! 🚀
 
 🚀 Collection of tools that performs git hooks management for linting, code formating, commit message standardization, sutomated versioning and package publishing
 
