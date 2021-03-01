@@ -11,7 +11,7 @@
 
 ## Prerequisites
 
-1.  Set up your environment. Follow the steps in the [Quick Start: snap-it shell](/ToDO:pending)project.
+1.  Set up your environment.
     The steps include:
 
         - npm       - v7.6.0
