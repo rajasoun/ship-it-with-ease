@@ -10,7 +10,7 @@
         "list-outdated-npm-packages": "npm outdated --depth=0.",
         "update-npm-packages": "npm update",
         "lint": "npm run lint:lwc && npm run lint:aura",
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "echo \"Error: no test specified\" && exit 0",
         "commit": "cz",
         "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
         "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
