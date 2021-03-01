@@ -7,19 +7,34 @@
 -   [commitlint](https://github.com/conventional-changelog/commitlint): Tool that validates the commit message following a set of rules and good practices
 -   [prettier](https://prettier.io/): An opinionated code formatter
 -   [lint-staged](https://github.com/okonet/lint-staged): Run linters against staged git files and don't let :poop: slip into your code base!
+-   [pre-commit](https://pre-commit.com/): A framework for managing and maintaining multi-language pre-commit hooks
 
 ## Prerequisites
 
 1.  Set up your environment. Follow the steps in the [Quick Start: snap-it shell](/ToDO:pending)project.
     The steps include:
 
-        - NVM
-        - Nodejs
+        - npm       - v7.6.0
+        - Nodejs    - v15.10.0
+        - python3   - v3.9.2
 
 1.  Clone this repository:
 
     ```
     git clone ghttps://github.com/rajasoun/ship-it
     cd ship-it
+    ```
+
+1.  To enable husky, commitzen, commitlint, prettier and lint-staged
+
+    ```
     npm install
+    ```
+
+1.  To enable pre-commit (python based) and ggshield
+
+    ```
+    pip3 install pipenv
+    pipenv shell
+    pipenv install
     ```
